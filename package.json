@@ -51,5 +51,8 @@
   "scripts": {
     "start": "node index.js",
     "test": "make ci"
+  },
+  "volta": {
+    "node": "15.14.0"
   }
 }

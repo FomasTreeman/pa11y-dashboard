@@ -25,14 +25,14 @@ if (fs.existsSync(jsonPath)) {
   module.exports = require(jsPath);
 } else {
   module.exports = {
-    port: Number(env('PORT', '4000')),
+    port: Number(env('PORT', '4321')),
     noindex: env('NOINDEX', 'true') === 'true',
     readonly: env('READONLY', 'false') === 'true',
 
     webservice: env('WEBSERVICE_URL', {
       database: env('WEBSERVICE_DATABASE', 'mongodb://localhost/pa11y-webservice'),
       host: env('WEBSERVICE_HOST', '0.0.0.0'),
-      port: Number(env('WEBSERVICE_PORT', '3000')),
+      port: Number(env('WEBSERVICE_PORT', '3333')),
       cron: env('WEBSERVICE_CRON', false)
     })
   };

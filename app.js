@@ -177,7 +177,7 @@ function loadErrorHandling(app, config, callback) {
 		response.render('500');
 	});
 
-	app.server.listen(config.port, error => {
+	app.server.listen(config.port, '0.0.0.0', error => {
 		callback(error, app);
 	});
 }
